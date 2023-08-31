@@ -42,6 +42,10 @@ const RegisterLogin = () =>{
 
     const confirmPassword = document.createElement('input');
     confirmPassword.className = 'password';
+    confirmPassword.type = 'password';
+    confirmPassword.placeholder = 'Confirm password';
+    confirmPassword.minLength = '2';
+    confirmPassword.maxLength = '20';
 
 
 
