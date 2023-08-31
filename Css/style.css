@@ -1,0 +1,38 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    /* background: #7cc; */
+    background: transparent,#7cc;;
+     /* background: #089; */
+}
+/* styling the header content */
+.container ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    padding-top: 2em;
+    cursor: pointer;
+    /* background: #2fa2fa; */
+    background: #7cc;
+    height: 120px;
+}
+
+.container h3{
+    color: #ffff;
+    font: 1rem;
+    opacity: 0.3;
+    text-transform: capitalize;
+    /* text-align: center; */
+}
+
+#awesome_team{
+    color: #faebdf;
+    padding-left: 1em;
+    padding-bottom: 1em;
+}
