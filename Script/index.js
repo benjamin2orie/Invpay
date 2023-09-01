@@ -12,8 +12,11 @@ const RegisterLogin = () =>{
         return;
     }
 
-    register = document.createElement('form');
-    register.className = 'form_field';
+    register = document.createElement('div');
+    register.className = 'center_field';
+
+    const FormField = document.createElement('form');
+    FormField.className = 'form_field';
     
 
     const inputField = document.createElement('input');
@@ -54,7 +57,8 @@ const RegisterLogin = () =>{
 
 
 
-    register.append(inputField);
+    register.append(FormField);
+    register.append(inputField)
     register.append(Break);
     register.append(inputField2);
     register.append(Break2);
