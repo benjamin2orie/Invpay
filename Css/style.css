@@ -7,10 +7,14 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    /* background: #7cc; */
-    background: transparent,#7cc;;
-     /* background: #089; */
+    background: #aaaa;
+    /* background: transparent,#7cc;; */
+    /* background: #aaaa; */
+    /* background-image: radial-gradient(at 50% 100%, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), linear-gradient(to bottom, rgba(255,255,255,0.25) 0%, rgba(0,0,0,0.25) 100%); */
+    /* background-blend-mode: screen, overlay; */
 }
+
+
 
 
 
@@ -19,7 +23,8 @@ body{
     justify-content: space-between;
     width: 100%;
     height: 120px;
-    background: #677;
+    /* background: #677; */
+    background: #aaaa;
     padding-top: 2em;
 }
 
@@ -57,39 +62,75 @@ body{
     padding-right: 8em;
     cursor: pointer;
     color: #cacaca;
+    font-family: cursive;
     text-transform: capitalize;
 }
 
 .sign_up{
     background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
     background-blend-mode: multiply,multiply;
+    /* background: #aaaa; */
     border-top-right-radius: 2px;
     border-top-left-radius: 2px;
     border-bottom-left-radius: 2px;
     border-bottom-right-radius: 2px;
     height: 50px;
+    color: #fffa;
     width: 120px;
     text-align: center;
-    padding-top: 0.4em;
-}
-/* styling the header content */
-.container ul{
-    display: flex;
-    justify-content: space-evenly;
-    list-style: none;
-    padding-top: 2em;
-    cursor: pointer;
-    /* background: #2fa2fa; */
-    background: #7cc;
-    height: 120px;
+    border: 1px solid #aaa;
 }
 
-.container h3{
-    color: #ffff;
-    font: 1rem;
-    opacity: 0.3;
+.register_input{
+    border: 1px solid #aaaa;
+    width: 140px;
+    height: 50px;
+    color: #fffa;
+    text-align: center;
+}
+
+/* styling the login field */
+
+
+.container_product{
+    background: #989898;
+    width: 400px;
+    height: 500px;
+    padding-left: 5em;
+    margin-left: 30em;
+    padding-top: 3em;
+    margin-top: 3em;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border: 1px solid #aaa;
+}
+
+.container_product h3{
     text-transform: capitalize;
-    /* text-align: center; */
+    font-size: 15px;
+    margin-left: 4em;
+    margin-bottom: 2em;
+    /* bottom: 1em; */
+    color: #8a2be2;
+}
+#input_padding{
+    margin-bottom: 2em;
+}
+
+.inputField{
+    width: 230px;
+    height: 40px;
+    background: #FFFAACAa;
+    border: none;
+    outline: none;
+    padding-left: 1em;
+    color: #002;
+    /* padding-bottom: 5px; */
+}
+::placeholder{
+    text-transform: capitalize;
 }
 
 #awesome_team{
@@ -99,7 +140,44 @@ body{
 }
 
 /* importing style from js file */
+
+.center_field{
+    background: #aaaa;
+    height: 200px;
+    width: 300px;
+    margin-left: 40em;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 10px 10px 10px 10px #aaa;
+    position: absolute;
+    bottom: 25em;
+}
+
 .form_field{
     margin-bottom: 4em;
     margin-top: 5em;
 }
+
+/* styling the header content */
+.container ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    padding-top: 2em;
+    cursor: pointer;
+    /* background: #2fa2fa; */
+    /* background: #7cc; */
+    background: #aaaa;
+    height: 120px;
+    margin-top: 10em;
+}
+
+.container h3{
+    color: #ffff;
+    font: 1rem;
+    opacity: 0.4;
+    text-transform: capitalize;
+    /* text-align: center; */
+}
+

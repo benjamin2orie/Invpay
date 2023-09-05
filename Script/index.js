@@ -56,7 +56,7 @@ const RegisterLogin = () =>{
 
 
 
-
+    
     register.append(FormField);
     register.append(inputField)
     register.append(Break);
@@ -65,4 +65,23 @@ const RegisterLogin = () =>{
     register.append(password)
     register.append(Break3);
     document.body.append(register);
+}
+
+let Bgd;
+const generateLink = () => {
+   if(Bgd){
+    return;
+   }
+
+   Bgd = document.createElement('li');
+   Bgd.className = 'AnchorLink';
+
+
+   const ugut = document.createElement('a');
+   ugut.className = 'contribute';
+   ugut.href = './team.htnl';
+   ugut.textContent = 'Learn';
+   Bgd.append(ugut);
+   document.body.append(Bgd);
+
 }
