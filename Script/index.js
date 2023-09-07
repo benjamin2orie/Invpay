@@ -3,6 +3,15 @@
 // creating some header navbar
 
 
+// writing the callback function of the input field form
+
+const formVissible = () => {
+    let logIn = document.querySelector('.container_signup');
+    logIn.style.display = 'block';
+
+}
+
+
 // craeting a registering input fieled
 
 let register;
@@ -85,3 +94,22 @@ const generateLink = () => {
    document.body.append(Bgd);
 
 }
+
+
+
+/*
+ function passwordValidate(){
+    let userPassword = document.getElementById('password-input').value;
+      if(userPassword.length <= 9){
+          password.innerHTML = "password must be greater then 6 characters";
+          return false
+      } 
+       if(!userPassword.match(/^[0-9]{10}$/)){
+          password.innerHTML = '10 digit is required';
+          return false
+      } 
+          password.innerHTML = "<i class='bx bxs-check-circle'></i>"
+          return true
+      
+}
+*/

@@ -15,23 +15,32 @@
                 <i class='bx bxl-xing' id="invpay"></i>
                 <p class="inpay">invpay inc</p>
             </div><div class="log">
-                <h2 class="register_input" onclick="RegisterLogin()">register</h2>
-                <h2 class="sign_up">sign up</h2>
+                <h2 class="register_input">login</h2>
+                <h2 class="sign_up" onclick="formVissible()">sign up</h2>
             </div>
         </div>
     </header>
-    <section class="allProduc">
+    <section class="allProduct">
         <div class="container_product">
-            <h3>register</h3>
+            <h3>login</h3>
             <form action="#" class="formField">
                 <input type="text" class="inputField" placeholder="User name" id="input_padding"><br/>
-                <input type="email" class="inputField" placeholder="enter a valid email" id="input_padding"><br/>
                 <input type="password" class="inputField" placeholder="enter password" id="input_padding"><br/>
                 <input type="password" class="inputField" placeholder="confirm password" id="input_padding"><br/>
-                <button class="inputField">submit</button>
+                <button class="inputField" id="BtnSub">enter</button>
             </form>
         </div>
     </section>
+    <div class="container_signup">
+        <h3>signup</h3>
+        <form action="#" class="formField">
+            <input type="text" class="inputField" placeholder="User name" id="input_padding"><br/>
+            <input type="email" class="inputField" placeholder="enter a valid email" id="input_padding"><br/>
+            <input type="password" class="inputField" placeholder="enter password" id="input_padding"><br/>
+            <input type="password" class="inputField" placeholder="confirm password" id="input_padding"><br/>
+            <button class="inputField" id="BtnSub" onkeyup="passwordValidate()">submit</button>
+        </form>
+    </div>
     <footer class="headerNav">
         <div class="container">
             <nav>

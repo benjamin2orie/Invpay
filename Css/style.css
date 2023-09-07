@@ -76,16 +76,18 @@ body{
     border-bottom-right-radius: 2px;
     height: 50px;
     color: #fffa;
+    /* color: #8a2aeb; */
     width: 120px;
     text-align: center;
     border: 1px solid #aaa;
 }
 
 .register_input{
-    border: 1px solid #aaaa;
+    border: 0.1em solid #aaaa;
     width: 140px;
     height: 50px;
     color: #fffa;
+    /* color: #8a2aeb; */
     text-align: center;
 }
 
@@ -105,6 +107,7 @@ body{
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
     border: 1px solid #aaa;
+    box-shadow: 10px 10px 10px 10px #CDDCDC;
 }
 
 .container_product h3{
@@ -114,10 +117,12 @@ body{
     margin-bottom: 2em;
     /* bottom: 1em; */
     color: #8a2be2;
+    border-radius: 50%;
 }
 #input_padding{
     margin-bottom: 2em;
 }
+
 
 .inputField{
     width: 230px;
@@ -126,11 +131,51 @@ body{
     border: none;
     outline: none;
     padding-left: 1em;
+    font-size: 15px;
     color: #002;
-    /* padding-bottom: 5px; */
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+#BtnSub{
+    font-size: 20px;
+    text-transform: capitalize;
+    background: #8a2aeb;
+    color: #aaa;
+    cursor: pointer;
 }
 ::placeholder{
     text-transform: capitalize;
+}
+
+.container_signup{
+    background: #989898;
+    width: 400px;
+    height: 500px;
+    padding-left: 5em;
+    margin-left: 30em;
+    padding-top: 3em;
+    margin-top: 3em;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border: 1px solid #aaa;
+    box-shadow: 10px 10px 10px 10px #CDDCDC;
+}
+
+/* styling how the vissibiity of the form field */
+
+
+
+.container_signup h3{
+    text-transform: capitalize;
+    font-size: 15px;
+    margin-left: 4em;
+    margin-bottom: 2em;
+    color: #8a2be2;
 }
 
 #awesome_team{
@@ -141,7 +186,7 @@ body{
 
 /* importing style from js file */
 
-.center_field{
+/* .center_field{
     background: #aaaa;
     height: 200px;
     width: 300px;
@@ -152,12 +197,12 @@ body{
     box-shadow: 10px 10px 10px 10px #aaa;
     position: absolute;
     bottom: 25em;
-}
+} */
 
-.form_field{
+/* .form_field{
     margin-bottom: 4em;
     margin-top: 5em;
-}
+} */
 
 /* styling the header content */
 .container ul{
@@ -170,7 +215,7 @@ body{
     /* background: #7cc; */
     background: #aaaa;
     height: 120px;
-    margin-top: 10em;
+    /* margin-top: 10em; */
 }
 
 .container h3{
@@ -178,6 +223,84 @@ body{
     font: 1rem;
     opacity: 0.4;
     text-transform: capitalize;
-    /* text-align: center; */
+}
+
+
+
+
+/* syling the display view on the mobile devices */
+
+
+@media (max-width: 678px) {
+    /* styling the header menu */
+    .contain_section{
+        justify-content: space-evenly;
+        background: #8a2aeb;
+    }
+
+
+    /* styling the header logo */
+    .inpay{
+        font-size: 10px;
+        left: 0.5em;
+    }
+
+
+    .logo{
+        padding-left: 0;
+    }
+    
+    .log{
+        gap: 1em;
+        padding-right: 0;
+    }
+
+    /* styling the header toggling button */
+    .sign_up, .register_input,
+    .register_input{
+        width: 80px;
+        font-size: 15px;
+        height: 30px;
+      
+    }
+
+    .log{
+        margin-top: 1em;
+    }
+
+    /* styling the login field */
+
+    .container_product,
+     .container_signup{
+        background: #989898;
+        width: 300px;
+        height: 500px;
+        padding-left: 2em;
+        margin-left: 2.5em;
+    }
+    .container h3{
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .container ul{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 2em;
+        background: #8a2aeb;
+        margin-top: 8em;
+    }
+
+    #awesome_team{
+        color: #faebdf;
+        padding-left: 5px;
+        padding-bottom: 1px;
+    }
+
+    .container_signup{
+        display: none;
+    }
+    
 }
 
